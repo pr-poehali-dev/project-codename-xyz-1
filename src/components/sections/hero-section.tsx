@@ -2,9 +2,9 @@ import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 
 const images = [
-  "/minimal-architecture-portfolio-with-clean-lines.jpg",
-  "/fashion-photography-editorial-black-and-white.jpg",
-  "/modern-ui-design-portfolio-mockup.jpg",
+  "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/02c6e5cb-7d03-4fb4-afc6-1365b586e65b.jpg",
+  "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/dabd801b-a872-4f2a-bccc-0cb22710aabd.jpg",
+  "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/b6cca1f2-0643-4a99-8717-28a240e420f1.jpg",
 ]
 
 export function HeroSection() {
@@ -36,8 +36,8 @@ export function HeroSection() {
           transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
         >
           <img
-            src={images[0] || "/placeholder.svg"}
-            alt="Портфолио 1"
+            src={images[0]}
+            alt="Белый зайчик"
             className="w-full h-full object-cover"
           />
         </motion.div>
@@ -50,8 +50,8 @@ export function HeroSection() {
           transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
         >
           <img
-            src={images[1] || "/placeholder.svg"}
-            alt="Портфолио 2"
+            src={images[1]}
+            alt="Маникюр"
             className="w-full h-full object-cover"
           />
         </motion.div>
@@ -64,8 +64,8 @@ export function HeroSection() {
           transition={{ duration: 1, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
           <img
-            src={images[2] || "/placeholder.svg"}
-            alt="Портфолио 3"
+            src={images[2]}
+            alt="Белые птицы"
             className="w-full h-full object-cover"
           />
         </motion.div>
@@ -78,7 +78,7 @@ export function HeroSection() {
         transition={{ duration: 1, delay: 0.8 }}
       >
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-center text-foreground mix-blend-difference">
-          Ваши работы, <em className="italic">в фокусе</em>.
+          С днём рождения, <em className="italic">Каришка!</em>
         </h1>
       </motion.div>
 

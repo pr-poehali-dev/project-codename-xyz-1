@@ -2,9 +2,9 @@ import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 
 const showcaseImages = [
-  "/modern-architecture-building-exterior-minimal.jpg",
-  "/fashion-model-editorial-portrait-dramatic-lighting.jpg",
-  "/interior-design-minimalist-living-room-natural-lig.jpg",
+  "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/407414cd-5b27-4893-a0b3-35fa551e0376.jpg",
+  "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/7f413789-c72a-4ff8-8ce9-607a26915613.jpg",
+  "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/fffeb69b-8856-49b1-adc5-66f536e9b6da.jpg",
 ]
 
 export function ShowcaseSection() {
@@ -46,11 +46,10 @@ export function ShowcaseSection() {
                 delay: i * 0.15,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              data-clickable
             >
               <motion.img
                 src={src}
-                alt={`Изображение ${i + 1}`}
+                alt={`Фото ${i + 1}`}
                 className="w-full h-full object-cover"
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}

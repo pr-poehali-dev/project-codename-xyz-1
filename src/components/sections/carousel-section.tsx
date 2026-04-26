@@ -1,17 +1,16 @@
 import { motion } from "framer-motion"
 
-const portfolioItems = [
-  "/portfolio-website-design-preview-modern.jpg",
-  "/photography-portfolio-website-clean.jpg",
-  "/architecture-firm-website-minimal.jpg",
-  "/design-agency-portfolio-dark-theme.jpg",
-  "/artist-portfolio-website-creative.jpg",
-  "/writer-portfolio-website-elegant.jpg",
+const carouselImages = [
+  "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/02c6e5cb-7d03-4fb4-afc6-1365b586e65b.jpg",
+  "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/dabd801b-a872-4f2a-bccc-0cb22710aabd.jpg",
+  "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/b6cca1f2-0643-4a99-8717-28a240e420f1.jpg",
+  "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/407414cd-5b27-4893-a0b3-35fa551e0376.jpg",
+  "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/7f413789-c72a-4ff8-8ce9-607a26915613.jpg",
+  "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/fffeb69b-8856-49b1-adc5-66f536e9b6da.jpg",
 ]
 
 export function CarouselSection() {
-  // Duplicate for seamless loop
-  const items = [...portfolioItems, ...portfolioItems]
+  const items = [...carouselImages, ...carouselImages]
 
   return (
     <section className="bg-primary py-24 overflow-hidden">
@@ -22,7 +21,7 @@ export function CarouselSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Создано авторами для авторов.
+          Всё самое нежное — для тебя. 🎀
         </motion.h2>
       </div>
 
@@ -39,13 +38,12 @@ export function CarouselSection() {
           {items.map((src, i) => (
             <div
               key={i}
-              className="flex-shrink-0 w-[300px] md:w-[400px] rounded-xl overflow-hidden shadow-2xl"
-              data-clickable
+              className="flex-shrink-0 w-[300px] md:w-[400px] rounded-xl overflow-hidden shadow-2xl aspect-[3/4]"
             >
               <img
-                src={src || "/placeholder.svg"}
-                alt={`Пример портфолио ${(i % portfolioItems.length) + 1}`}
-                className="w-full h-auto"
+                src={src}
+                alt={`Фото ${(i % carouselImages.length) + 1}`}
+                className="w-full h-full object-cover"
               />
             </div>
           ))}

@@ -1,28 +1,31 @@
 import type React from "react"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { ArrowRight } from "lucide-react"
 
-const articles = [
+const wishes = [
   {
-    title: "Искусство визуального сторителлинга",
-    category: "Дизайн",
-    image: "/visual-storytelling-design-article.jpg",
+    title: "Ты невероятно красивая",
+    category: "Внешность",
+    text: "Твои глаза светятся так, что даже звёзды завидуют.",
+    image: "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/02c6e5cb-7d03-4fb4-afc6-1365b586e65b.jpg",
   },
   {
-    title: "Как создать личный бренд онлайн",
-    category: "Стратегия",
-    image: "/personal-branding-digital-marketing.jpg",
+    title: "Ты лучшая подруга на свете",
+    category: "Дружба",
+    text: "С тобой рядом всегда тепло и весело — ты умеешь поддержать в любой момент.",
+    image: "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/7f413789-c72a-4ff8-8ce9-607a26915613.jpg",
   },
   {
-    title: "Тренды типографики 2025",
-    category: "Типографика",
-    image: "/typography-trends-modern-fonts.jpg",
+    title: "Ты такая смешная и интересная",
+    category: "Характер",
+    text: "Твои истории — это отдельный сериал. Слушать тебя можно бесконечно!",
+    image: "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/407414cd-5b27-4893-a0b3-35fa551e0376.jpg",
   },
   {
-    title: "Минимализм в дизайне портфолио",
-    category: "Вдохновение",
-    image: "/placeholder.svg?height=200&width=300",
+    title: "У тебя впереди целый мир",
+    category: "Пожелание",
+    text: "Пусть этот год принесёт тебе только радость, смех и всё, о чём мечтаешь!",
+    image: "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/fffeb69b-8856-49b1-adc5-66f536e9b6da.jpg",
   },
 ]
 
@@ -43,15 +46,14 @@ export function InsightsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Статьи
+          О тебе с любовью
         </motion.p>
 
         <div className="divide-y divide-border">
-          {articles.map((article, i) => (
-            <motion.a
+          {wishes.map((wish, i) => (
+            <motion.div
               key={i}
-              href="#"
-              className="group flex items-center justify-between py-6 relative"
+              className="group flex items-center justify-between py-6 relative cursor-default"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -59,20 +61,19 @@ export function InsightsSection() {
               onMouseEnter={() => setHoveredIndex(i)}
               onMouseLeave={() => setHoveredIndex(null)}
               whileHover={{ paddingLeft: 16, paddingRight: 16 }}
-              data-clickable
             >
               <div className="flex-1">
-                <span className="text-xs text-muted-foreground uppercase tracking-wider">{article.category}</span>
+                <span className="text-xs text-muted-foreground uppercase tracking-wider">{wish.category}</span>
                 <h3 className="font-serif text-xl md:text-2xl text-foreground mt-1 group-hover:text-primary transition-colors">
-                  {article.title}
+                  {wish.title}
                 </h3>
+                <p className="text-muted-foreground text-sm mt-1">{wish.text}</p>
               </div>
-              <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
-            </motion.a>
+              <span className="text-2xl ml-4">🌸</span>
+            </motion.div>
           ))}
         </div>
 
-        {/* Floating hover image */}
         <AnimatePresence>
           {hoveredIndex !== null && (
             <motion.div
@@ -88,8 +89,8 @@ export function InsightsSection() {
               transition={{ duration: 0.2 }}
             >
               <img
-                src={articles[hoveredIndex].image || "/placeholder.svg"}
-                alt={articles[hoveredIndex].title}
+                src={wishes[hoveredIndex].image}
+                alt={wishes[hoveredIndex].title}
                 className="w-full h-auto"
               />
             </motion.div>
