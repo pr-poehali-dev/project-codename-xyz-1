@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 const carouselImages = [
   "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/566d8832-3482-4ed2-8d00-6609c6c846a2.jpg",
-  "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/550d3bbb-5e62-439b-b7a6-0b430e0b6cda.jpg",
+  "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/c14079dd-3868-4e52-a205-dee8c38e46ae.jpg",
   "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/1ce3a83d-79c6-43ac-876c-6e864d1875a7.jpg",
   "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/eef6b3a0-fa34-46a5-8b33-3e438ab0934f.jpg",
   "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/450d0cc2-2358-4e18-a7ad-f83703da6de0.jpg",

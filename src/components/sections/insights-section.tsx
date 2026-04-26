@@ -13,7 +13,7 @@ const wishes = [
     title: "Хороший человек",
     category: "Общение",
     text: "Вся опора в тебе. Спасибо, что балуешь.",
-    image: "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/550d3bbb-5e62-439b-b7a6-0b430e0b6cda.jpg",
+    image: "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/c14079dd-3868-4e52-a205-dee8c38e46ae.jpg",
   },
   {
     title: "Ты такая смешная и интересная",
