@@ -17,18 +17,18 @@ export function ManifestoSection() {
     >
       <div className="max-w-5xl mx-auto relative">
         <h2 className="text-4xl md:text-6xl lg:text-7xl font-serif leading-tight text-center text-foreground/10">
-          Семнадцать лет —
+          Наконец-то тебе
           <br />
-          и ты уже покоряешь мир.
+          исполнился годик.
         </h2>
 
         <motion.h2
           className="absolute inset-0 text-4xl md:text-6xl lg:text-7xl font-serif leading-tight text-center bg-gradient-to-r from-rose-400 via-pink-400 to-rose-500 bg-clip-text text-transparent"
           style={{ clipPath }}
         >
-          Семнадцать лет —
+          Наконец-то тебе
           <br />
-          и ты уже покоряешь мир.
+          исполнился годик.
         </motion.h2>
       </div>
     </section>

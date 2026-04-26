@@ -23,7 +23,7 @@ export function FooterSection() {
           </motion.h2>
 
           <p className="text-muted-foreground text-lg max-w-md">
-            Расти красивой, смелой и счастливой. Мы тебя очень любим! 🐰🤍
+            Хорошей девочке хорошая жизнь. 🤍
           </p>
 
           <motion.div
@@ -33,7 +33,7 @@ export function FooterSection() {
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
           >
-            {["🌸", "🐰", "🎀", "🤍", "🌸"].map((emoji, i) => (
+            {["🌷", "👠", "🎀", "🤍", "🌷"].map((emoji, i) => (
               <motion.span
                 key={i}
                 animate={{ y: [0, -10, 0] }}
@@ -46,7 +46,7 @@ export function FooterSection() {
         </motion.div>
 
         <div className="mt-16 pt-8 border-t border-border">
-          <p className="text-muted-foreground text-sm">С днём рождения, Каришка! 🎂 17 лет — это только начало ✨</p>
+          <p className="text-muted-foreground text-sm">С днём рождения, Каришка! 🎂 17 лет — бьюри лайф</p>
         </div>
       </div>
     </footer>

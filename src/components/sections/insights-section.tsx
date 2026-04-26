@@ -6,26 +6,26 @@ const wishes = [
   {
     title: "Ты невероятно красивая",
     category: "Внешность",
-    text: "Твои глаза светятся так, что даже звёзды завидуют.",
-    image: "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/02c6e5cb-7d03-4fb4-afc6-1365b586e65b.jpg",
+    text: "Можно смотреть на тебя часами.",
+    image: "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/e21fefa7-eab6-484a-9033-ff238bb38b08.jpg",
   },
   {
-    title: "Ты лучшая подруга на свете",
-    category: "Дружба",
-    text: "С тобой рядом всегда тепло и весело — ты умеешь поддержать в любой момент.",
-    image: "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/7f413789-c72a-4ff8-8ce9-607a26915613.jpg",
+    title: "Хороший человек",
+    category: "Общение",
+    text: "Вся опора в тебе. Спасибо, что балуешь.",
+    image: "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/72f58caa-d11d-42f6-b2b6-48e620cc833a.jpg",
   },
   {
     title: "Ты такая смешная и интересная",
     category: "Характер",
-    text: "Твои истории — это отдельный сериал. Слушать тебя можно бесконечно!",
-    image: "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/407414cd-5b27-4893-a0b3-35fa551e0376.jpg",
+    text: "Пожалуйста, говори чаще.",
+    image: "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/cdfe7e4f-841c-4613-b5aa-fc9370db3a9b.jpg",
   },
   {
-    title: "У тебя впереди целый мир",
+    title: "У тебя будет всё",
     category: "Пожелание",
-    text: "Пусть этот год принесёт тебе только радость, смех и всё, о чём мечтаешь!",
-    image: "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/fffeb69b-8856-49b1-adc5-66f536e9b6da.jpg",
+    text: "Сколько песен про твой возраст.. и все тебе.",
+    image: "https://cdn.poehali.dev/projects/f7b81972-ffd0-49bb-9545-6833459c8674/files/9a85675a-be34-4179-9713-3d77e36093b7.jpg",
   },
 ]
 
